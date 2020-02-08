@@ -1,0 +1,18 @@
+Project : Fitness Trainer
+
+
+My Associate Id- 844515
+
+My team members Id
+844525,844524,844567 
+ 
+My Role : Team Lead
+My Work :
+1. index.html
+2. trainerAppoinment.html Using html5,css3,js,Bootstrap
+
+3.Trainer Appoinment page is with validation using JavaScript
+
+4.Integration of all members pages
+
+
