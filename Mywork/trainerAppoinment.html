@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trainer Appoinment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+  .navbar-nav > li{
+padding-left:5px;
+padding-right:5px;
+}
+img {
+      position: relative;
+      width: 150px;
+      height: 90px;
+  }
+  body{
+    background-color:lightcyan;
+  }
+  fieldset {
+padding: 8px;
+  border: 1px solid black;
+}
+</style>
+
+<script>
+  
+function Validation() {
+var regex = /^[a-zA-Z\s]+$/;
+var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;  
+var fname = document.getElementById('fname').value;
+var lname = document.getElementById('lname').value;
+var age = document.getElementById('numb').value;
+var pin= document.getElementById('pin').value;
+
+  
+   
+if(fname == "") {
+   alert(" First name cant be blank!")
+}
+else if(regex.test(fname) === false) {
+       alert("First name contains only alphabets!!!");
+       return false;
+    } 
+      
+if(lname == "") {
+   alert("last name cant be blank!")
+} 
+else if(regex.test(lname) === false) {
+       alert("last name contains only alphabets!!!");
+       return false;
+    } 
+
+if (isNaN(age) || age < 18 || age > 60)
+{ 
+  alert("The age must be in between 18 to 60 only!!!");
+  return false;
+}
+
+if (isNaN(age) || age < 18 || age > 60)
+{ 
+  alert("The age must be in between 18 to 60 only!!!");
+  return false;
+}
+if(isNaN(pin) || !pat.test(pin))
+{
+alert("Pin code should be 6 digits and not contains alphabets");
+return false;
+}
+}
+
+
+</script>
+ </head>
+
+  <body>
+<header class="container mt-3">
+<hgroup class="row">
+  <div class="col-sm-4">
+      <div class="d-flex justify-content-start">
+          <img src="assets\images\logo.jpg" class="rounded-circle" alt="Logo">
+      </div>
+  </div>
+
+<div class="col-sm-6 ml-4">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a href="index.html" class="nav-link text-light">Home</a>
+</li>
+<li class="nav-item">
+<a href="trainerAppoinment.html" class="nav-link text-light">Place Appoinment</a>
+</li>
+<li class="nav-item">
+<a href="viewAppoinment.html" class="nav-link text-light">View Appoinment</a>
+</li>
+<li class="nav-item">
+<a href="contact.html" class="nav-link text-light">Contact Us</a>
+</li>
+</ul>
+</nav>
+</div>
+</hgroup>
+</header>
+<hr>
+<header>
+  <section>
+      <aside>
+        <div class="column sm-3 ">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="trainerAppoinment.html">Place Appoinment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="viewAppoinment.html">View Appoinment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+</div>
+</aside>
+</section>
+</header>
+<div class="container d-flex justify-content-center">
+<div class="col-sm-9 ">
+<div class="d-flex justify-content-center ml-4">
+
+<form method="post" onSubmit="return Validation();">
+<div class="form-group">
+<div class="form-row">
+     <div class="col-md-4 ml-2">
+       <label for="First Name">First name</label>
+       <input type="text" id="fname"  class="form-control" placeholder="First name" autofocus required >
+     </div>
+     <div class="col-md-4 mb-2 ml-2">
+       <label for="Last Name">Last name</label>
+       <input type="text" id="lname" class="form-control" placeholder="Last name" required>
+        </div>
+      </div>
+  </div>
+
+  
+  <div class="form-group col-md-4 ">
+  <label for="age">Age</label>
+  <input id="numb"  class="form-control" name="age" required/>
+  </div>
+
+  <div class="form-group col-md-4 ">
+  <label for="Email">Email</label>
+  <input type="email" id="email"  class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+  </div>
+
+  <div class="form-group ml-1">
+  <label for="contact">Contact Number</label>
+  <input type="text" size="1" maxlength="1" value="+91">&nbsp;
+  <input type="text" size="1" maxlength="1"  id="first" class="mob" >&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1" class="mob" >&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  <input type="text" size="1" maxlength="1"  class="mob">&nbsp;
+  </div>
+
+<div class="form-group">
+<fieldset>
+<div>
+<legend>Address:</legend>
+<label for="Street Address">Street Address</label>
+<textarea class="form-control"  class="form-control" id="addr" rows="3" required></textarea>
+</div>
+<br/>
+
+<div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="City">City</label>
+      <input type="text" class="form-control" id="city">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="State">State</label>
+      <select id="state" class="form-control">
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Tamilnadu">Tamilnadu</option>
+    <option value="Gujrat">Gujrat</option>
+     <option value="Karnatak">Karnatak</option> 
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="Country" >Country</label>
+      <select id="Country" class="form-control" >
+        <option value="Ind">India</option>
+         <option value="Us">USA</option>
+         <option value="Ge">Germany</option>
+         <option value="Aus">Australia</option>
+       </select>
+    </div>
+  </div>
+ <div>
+ <label for="Pincode">Pincode</label>
+ <input type="text" id="pin"  class="form-control" name="pincode" required>
+</div>
+</fieldset>
+</div>
+
+<div class="formGroup col-md-4 ml-2" id="trainerpref">
+<label for="Trainer Preferences">Trainer Preference</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="pref" id="" value="option1">
+  <label class="form-check-label" for="Male Trainer">
+  Male Trainer
+  </label>
+</div>
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="pref" id="" value="option2">
+  <label class="form-check-label" for="Female Trainer">
+  Female Trainer
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio"  class="form-control" name="pref" id="" value="option3">
+  <label class="form-check-label" for="No pref">
+  No Preferences
+  </label>
+</div>
+<br/>
+<div class="form-check">
+<input class="form-check-input"  class="form-control" type="radio" name="pref" id="" value="option5">
+<label class="form-check-label "for="Others"> Others
+<input type="text" class="form-control">
+</label>
+</div>
+</div>
+<br/>
+<div class="form-group">
+<label for="Physiotherapist">Do you need Physiotherapist ?</label>
+<br/>
+<input type="radio" name="ans" value="yes">Yes
+<input type="radio" name="ans" value="no">No<br>
+</div>
+<div class="form-group">
+<label for="Appoinment">Appoinment</label>
+<br/>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">7:00 AM-9:00 AM</th>
+            <th scope="col">9:00 AM-11:00 AM</th>
+            <th scope="col">11:00 AM-1:00 PM</th>
+            <th scope="col">1:00 PM-3:00 PM</th>
+            <th scope="col">3:00 PM-5:00 PM</th>
+        </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td><input type="radio" name="monday" value="1">1</td>
+                <td><input type="radio" name="monday" value="2">2</td>
+                <td><input type="radio" name="monday" value="3">3</td>
+                <td><input type="radio" name="monday" value="4">4</td>
+                <td><input type="radio" name="monday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td><input type="radio" name="tuesday" value="1">1</td>
+                <td><input type="radio" name="tuesday" value="2">2</td>
+                <td><input type="radio" name="tuesday" value="3">3</td>
+                <td><input type="radio" name="tuesday" value="4">4</td>
+                <td><input type="radio" name="tuesday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>wednesday</td>
+                <td><input type="radio" name="wednesday" value="1">1</td>
+                <td><input type="radio" name="wednesday" value="2">2</td>
+                <td><input type="radio" name="wednesday" value="3">3</td>
+                <td><input type="radio" name="wednesday" value="4">4</td>
+                <td><input type="radio" name="wednesday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td><input type="radio" name="thursday" value="1">1</td>
+                <td><input type="radio" name="thursday" value="2">2</td>
+                <td><input type="radio" name="thursday" value="3">3</td>
+                <td><input type="radio" name="thursday" value="4">4</td>
+                <td><input type="radio" name="thursday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><input type="radio" name="friday" value="1">1</td>
+                <td><input type="radio" name="friday" value="2">2</td>
+                <td><input type="radio" name="friday" value="3">3</td>
+                <td><input type="radio" name="friday" value="4">4</td>
+                <td><input type="radio" name="friday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td><input type="radio" name="saturday" value="1">1</td>
+                <td><input type="radio" name="saturday" value="2">2</td>
+                <td><input type="radio" name="saturday" value="3">3</td>
+                <td><input type="radio" name="saturday" value="4">4</td>
+                <td><input type="radio" name="saturday" value="5">5</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td><input type="radio" >1</td>
+                <td><input type="radio">2</td>
+                <td><input type="radio">3</td>
+                <td><input type="radio">4</td>
+                <td><input type="radio">5</td>
+            </tr>  
+        </tbody>
+      </table>  
+    </div>
+<div class="formGroup col-md-4 ml-2 " id="package">
+<label for="package">Select a Package</label>
+<div class="form-check md-2">
+  <input class="form-check-input" type="radio" name="onetime" id="" value="option1">
+  <label class="form-check-label" for="onetime">
+One Time Assesment
+  </label>
+<input type="text" name=""  class="form-control" placeholder="Rs.500">
+</div>
+<br/>
+<div class="form-check md-2">
+  <input class="form-check-input" type="radio" name="weekly" id="" value="option2">
+  <label class="form-check-label" for="Weekly Assesment">
+4 Weekly Assesment
+  </label>
+<input type="text" name=""  class="form-control" placeholder="Rs.400/Session">
+</div>
+<br/>
+<div class="form-check md-2">
+  <input class="form-check-input" type="radio" name="weekly" id="" value="option3">
+  <label class="form-check-label" for="Weekly">
+12 Weekly Assesment
+  </label>
+<input type="text" name=""  class="form-control" placeholder="Rs.300/Session">
+</div>
+<br/>
+<div class="form-check sm-3 mb-2">
+<input class="form-check-input" type="radio" name="others" id="" value="option4">
+<label class="form-check-label" for="Others"> Others
+<input type="text" class="formControl">
+</label>
+<br/>
+<br/>
+ <label for="quote">Quote</label>
+    <br/><br/>
+    <label for="INr">INR</label>
+    <input type="text" id="inr"  class="form-control" name="Inr">
+    
+    <label for="INr">Paise</label>
+    <input type="text" id="paise"  class="form-control" name="paise">
+</div>
+</div>
+<br/>
+<div class="form-group  col-md-4 ml-1">
+  <button type="submit" formaction="viewAppoinment.html" class="btn btn-primary ">Submit</button>
+    <a href="index.html" class="btn btn-link">Cancel</a>
+    </div>
+</form>
+</div>
+</div>
+</div>
+
+<script src="Validate.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
